@@ -54,9 +54,7 @@ input.form-control.color {
 .l-1 {
     height: 20px;
 }
-.mr-30{
-    margin-left: -30px;
-}
+
 .h-1:hover {
     background-color: #176a5b;
 }
@@ -133,7 +131,7 @@ input.form-control.color {
     position: relative;
     border-radius: 10px;
     bottom: 0px;
-    margin-left: -35px;
+    z-index:99999999;
 }
 
 .geotool-bottom.d-flex.justify-content-between {
@@ -158,6 +156,8 @@ input.form-control.color {
 .tab-1 {
     width: 27%;
     padding-right: 0;
+   z-index: 999;
+   position: relative;
 }
 
 .tab-2 {
@@ -191,11 +191,9 @@ input.form-control.color {
     width: 40px;
     background-color: #57a598;
     border-radius: 50%;
-
+    z-index: 99999999;
     svg {
         fill: #fff;
-
-        /* stroke: #fff; */
         path {
             fill: #fff;
         }
@@ -242,7 +240,6 @@ input.form-control.color {
     display: flex;
     justify-content: end;
     position: relative;
-    /* bottom: 240px; */
     border-radius: 10px;
   }
 
@@ -299,3 +296,4 @@ input.form-control.color {
     top: 5px;
     color: #fff;
   }
+

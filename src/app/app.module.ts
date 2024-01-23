@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -24,7 +23,6 @@ import { PaymentsComponent } from './payments/payments.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // LeafletModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,

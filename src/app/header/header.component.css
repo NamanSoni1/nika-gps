@@ -304,3 +304,9 @@ li:hover {
        fill:transparent;
     }
 }
+
+.desktop-view{
+    .a {
+        stroke: black;
+    }
+}
