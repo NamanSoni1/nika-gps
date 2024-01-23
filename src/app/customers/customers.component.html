@@ -1,0 +1,310 @@
+<div class="conatiner bg-light-green">
+    <div class="d-flex">
+
+        <!-- Customer table -->
+        <div class="col-lg-7">
+            <div class="input-group custom col-6 pt-3">
+                <div class="input-group-prepend color">
+                    <span class="input-group-text color"
+                        id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#fff"
+                            height="20px" width="20px" version="1.1" id="Capa_1"
+                            viewBox="0 0 488.4 488.4" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6    s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2    S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7    S381.9,104.65,381.9,203.25z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <input type="text" class="form-control color border"
+                    placeholder="Search customer">
+            </div>
+
+            <div class="d-flex ">
+                <div class="customer-table col-10 ms-2">
+                    <div class="row">
+                        <table class="table mt-3 table-hover">
+                            <thead class="tableColor">
+                                <tr class="font">
+                                    <th class="w-9">Name</th>
+                                    <th class="w-9">Type</th>
+                                    <th>Contract number</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr><tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr><tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr><tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr><tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr><tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr><tr>
+                                    <td><a (click)="userLogin = true">A R TOURS
+                                            & TRAVELS ID: 14225 </a></td>
+                                    <td><a>Corporate client</a></td>
+                                    <td><a></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="right-icon ms-2">
+                    <ul>
+                        <li class="mt-2" data-toggle="modal" data-target="#customerModal">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px"
+                                    height="40px" viewBox="0 0 24 24"
+                                    fill="#1b7f6d">
+                                    <circle cx="12" cy="12" r="10" stroke="#1b7f6d"
+                                        stroke-width="1.5" />
+                                    <path
+                                        d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15"
+                                        stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="mt-2" data-toggle="modal" data-target="#lockCustomer">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px"
+                                    height="30px" viewBox="0 0 20 20" version="1.1">
+    
+                                    <g id="layer1">
+    
+                                        <path
+                                            d="M 10 0 C 4.4830748 0 0 4.4830748 0 10 C 0 15.516925 4.4830748 20 10 20 C 10.686108 20 11.353096 19.923761 12 19.791016 L 12 18.767578 C 11.357372 18.916361 10.689085 19 10 19 C 7.7805094 19 5.7554759 18.195439 4.1875 16.867188 L 4.2871094 16.835938 L 5.0878906 16.615234 L 5.9003906 16.427734 L 6.7167969 16.273438 L 6.9472656 16.216797 L 7.1699219 16.123047 L 7.3710938 15.996094 L 7.5507812 15.835938 L 7.7011719 15.652344 L 7.8222656 15.443359 L 7.9101562 15.220703 L 7.9570312 14.986328 L 7.9707031 14.748047 L 7.9433594 14.509766 L 7.8789062 14.279297 L 7.7792969 14.0625 L 7.6484375 13.865234 L 7.4902344 13.644531 L 7.3535156 13.416016 L 7.0742188 12.855469 L 6.8261719 12.279297 L 6.609375 11.693359 L 6.4238281 11.09375 L 6.2734375 10.486328 L 6.1542969 9.8710938 L 6.0683594 9.2519531 L 6.015625 8.6289062 L 6 8.0019531 L 6.0195312 7.609375 L 6.078125 7.2207031 L 6.171875 6.8398438 L 6.3046875 6.4707031 L 6.4726562 6.1152344 L 6.6738281 5.7792969 L 6.9082031 5.4628906 L 7.1699219 5.171875 L 7.4628906 4.9082031 L 7.7773438 4.6738281 L 8.1152344 4.4746094 L 8.4707031 4.3046875 L 8.8398438 4.1738281 L 9.21875 4.078125 L 9.6074219 4.0195312 L 10 4 L 10.392578 4.0195312 L 10.78125 4.078125 L 11.160156 4.1738281 L 11.529297 4.3046875 L 11.886719 4.4746094 L 12.222656 4.6738281 L 12.537109 4.9082031 L 12.830078 5.171875 L 13.091797 5.4628906 L 13.326172 5.7792969 L 13.527344 6.1152344 L 13.695312 6.4707031 L 13.828125 6.8398438 L 13.923828 7.2207031 L 13.982422 7.609375 L 14 8.0019531 L 13.984375 8.6289062 L 13.931641 9.2519531 L 13.845703 9.8710938 L 13.728516 10.486328 L 13.576172 11.09375 L 13.390625 11.693359 L 13.234375 12.117188 C 13.541423 11.400474 14.085761 10.814969 14.757812 10.429688 L 14.833984 10.035156 L 14.925781 9.359375 L 14.982422 8.6816406 L 15 8.0019531 L 14.982422 7.5664062 L 14.923828 7.1328125 L 14.830078 6.7070312 L 14.697266 6.2910156 L 14.53125 5.8886719 L 14.330078 5.5 L 14.097656 5.1328125 L 13.830078 4.7871094 L 13.537109 4.4648438 L 13.212891 4.171875 L 12.869141 3.90625 L 12.5 3.6699219 L 12.113281 3.46875 L 11.710938 3.3027344 L 11.294922 3.1699219 L 10.867188 3.0761719 L 10.435547 3.0195312 L 10 3 L 9.5644531 3.0195312 L 9.1328125 3.0761719 L 8.7050781 3.1699219 L 8.2890625 3.3027344 L 7.8867188 3.46875 L 7.5 3.6699219 L 7.1328125 3.90625 L 6.7871094 4.171875 L 6.4628906 4.4648438 L 6.1699219 4.7871094 L 5.9042969 5.1328125 L 5.6699219 5.5 L 5.46875 5.8886719 L 5.3027344 6.2910156 L 5.1699219 6.7070312 L 5.0761719 7.1328125 L 5.0195312 7.5664062 L 5 8.0019531 L 5.0175781 8.6816406 L 5.0742188 9.359375 L 5.1660156 10.035156 L 5.2949219 10.703125 L 5.4589844 11.361328 L 5.6601562 12.013672 L 5.8984375 12.652344 L 6.1660156 13.275391 L 6.4707031 13.884766 L 6.6523438 14.193359 L 6.8632812 14.484375 L 6.9296875 14.595703 L 6.9648438 14.720703 L 6.96875 14.847656 L 6.9375 14.974609 L 6.875 15.087891 L 6.7871094 15.181641 L 6.6777344 15.25 L 6.5527344 15.287109 L 5.6953125 15.449219 L 4.84375 15.646484 L 4.0019531 15.878906 L 3.375 16.080078 C 1.9045777 14.478558 1 12.349397 1 10 C 1 5.0235149 5.0235149 1 10 1 C 14.976485 1 19 5.0235149 19 10 C 19 10.320097 18.979986 10.634169 18.947266 10.945312 C 19.294443 11.278158 19.578734 11.675211 19.769531 12.123047 C 19.918106 11.438148 20 10.728954 20 10 C 20 4.4830748 15.516925 0 10 0 z M 16.5 11 C 15.12521 11 14 12.12521 14 13.5 L 14 15 L 13 15 L 13 20 L 20 20 L 20 15 L 19 15 L 19 13.5 C 19 12.12521 17.87479 11 16.5 11 z M 16.5 12 C 17.334349 12 18 12.665651 18 13.5 L 18 15 L 15 15 L 15 13.5 C 15 12.665651 15.665651 12 16.5 12 z M 14 16 L 19 16 L 19 19 L 14 19 L 14 16 z "
+                                            style="fill:#fff; fill-opacity:1; stroke:none; stroke-width:0px;" />
+    
+                                    </g>
+    
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="mt-2" data-toggle="modal" data-target="#unlockCustomer">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff"
+                                    width="30px" height="30px"
+                                    viewBox="0 0 1024 1024" class="icon">
+                                    <path
+                                        d="M168 504.2c1-43.7 10-86.1 26.9-126 17.3-41 42.1-77.7 73.7-109.4S337 212.3 378 195c42.4-17.9 87.4-27 133.9-27s91.5 9.1 133.8 27A341.5 341.5 0 0 1 755 268.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 0 0 3 14.1l175.7 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c0-6.7-7.7-10.5-12.9-6.3l-56.4 44.1C765.8 155.1 646.2 92 511.8 92 282.7 92 96.3 275.6 92 503.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8zm756 7.8h-60c-4.4 0-7.9 3.5-8 7.8-1 43.7-10 86.1-26.9 126-17.3 41-42.1 77.8-73.7 109.4A342.45 342.45 0 0 1 512.1 856a342.24 342.24 0 0 1-243.2-100.8c-9.9-9.9-19.2-20.4-27.8-31.4l60.2-47a8 8 0 0 0-3-14.1l-175.7-43c-5-1.2-9.9 2.6-9.9 7.7l-.7 181c0 6.7 7.7 10.5 12.9 6.3l56.4-44.1C258.2 868.9 377.8 932 512.2 932c229.2 0 415.5-183.7 419.8-411.8a8 8 0 0 0-8-8.2z" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="mt-2" data-toggle="modal" data-target="#loginModal">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px"
+                                    height="24px" viewBox="0 0 24 24"
+                                    fill="#1b7f6d">
+                                    <path
+                                        d="M12 5C8.24261 5 5.43602 7.4404 3.76737 9.43934C2.51521 10.9394 2.51521 13.0606 3.76737 14.5607C5.43602 16.5596 8.24261 19 12 19C15.7574 19 18.564 16.5596 20.2326 14.5607C21.4848 13.0606 21.4848 10.9394 20.2326 9.43934C18.564 7.4404 15.7574 5 12 5Z"
+                                        stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                        stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Login Modal -->
+        <div class="col-lg-5" *ngIf="userLogin">
+            <h1 style="color: #fff;">A R TOURS &
+                TRAVELS</h1>
+            <div class="d-flex ">
+                <div class="customer-table m-30 col-10 p-4">
+                    <div class="row">
+                        <table class="table mt-3 table-hover">
+                            <thead class="tableColor">
+                                <tr class="font">
+                                    <th>User</th>
+                                    <th>Login</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr class="log">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="right-icon ms-2">
+                        <ul>
+                            <li>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px"
+                                        height="24px" viewBox="0 0 24 24"
+                                        fill="#1b7f6d">
+                                        <path
+                                            d="M12 5C8.24261 5 5.43602 7.4404 3.76737 9.43934C2.51521 10.9394 2.51521 13.0606 3.76737 14.5607C5.43602 16.5596 8.24261 19 12 19C15.7574 19 18.564 16.5596 20.2326 14.5607C21.4848 13.0606 21.4848 10.9394 20.2326 9.43934C18.564 7.4404 15.7574 5 12 5Z"
+                                            stroke="#fff" stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                            stroke="#fff" stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- New Customer Modal -->
+    <div class="modal fade" id="customerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content custom-border">
+            <div class="modal-header custom-Modal b-n">
+              <h5 class="modal-title" id="exampleModalLabel">
+                New Customer</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="font" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body custom-form">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label font">Company:</label>
+                  <input type="text" class="form-control custom-label b-n" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label font">Administrator account:</label>
+                    <input type="text" class="form-control custom-label b-n" id="recipient-name">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer custom-label b-n">
+                <button type="button" class="btn custom-btn">Create</button>
+                <button type="button" class="btn custom-btn" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  <!-- Lock Modal-->
+  <div class="modal fade" id="lockCustomer" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content custom-border">
+        <div class="modal-header custom-Modal b-n">
+          <h5 class="modal-title" id="exampleModalLabel">Confirm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="font" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body custom-form">
+           <span class="font"> Lock customer A R TOURS & TRAVELS? The customer will no longer be able to use the Ufin service.</span>
+        </div>
+        <div class="modal-footer custom-label b-n">
+            <button type="button" class="btn custom-btn">Lock</button>
+            <button type="button" class="btn custom-btn" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unlock Modal-->
+  <div class="modal fade" id="unlockCustomer" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content custom-border">
+        <div class="modal-header custom-Modal b-n">
+          <h5 class="modal-title" id="exampleModalLabel">Confirm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="font" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body custom-form">
+           <span class="font"> Unlock customer A R TOURS & TRAVELS?</span>
+        </div>
+        <div class="modal-footer custom-label b-n">
+            <button type="button" class="btn custom-btn">Unlock</button>
+            <button type="button" class="btn custom-btn" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!-- Login as Modal -->
+       <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content custom-border">
+            <div class="modal-header custom-Modal b-n">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Login as</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="font" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body custom-form">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label font">User:</label>
+                  <input type="text" class="form-control custom-label b-n" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label font">Customer account:</label>
+                    <input type="text" class="form-control custom-label b-n" id="recipient-name">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer custom-label b-n">
+                <button type="button" class="btn custom-btn">Login</button>
+                <button type="button" class="btn custom-btn" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>

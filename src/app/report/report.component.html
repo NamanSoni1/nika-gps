@@ -1,0 +1,314 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidebar col-md-3 col-lg-2 p-0">
+      <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1"
+        id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+            data-bs-target="#sidebarMenu" aria-label="Close"></button>
+        </div>
+        <div
+          class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+          <h6 class="ps-2">Common</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                aria-current="page"
+                [class.active]="isActive('motionHistory')"
+                (click)="motionHistory()">
+                Motion history
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('motionIntervals')"
+                (click)="motionInterval()">
+                Motion intervals
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('VehicleShareLinkFile')"
+                (click)="VehicleShareLinkFile()">
+                Vehicle Share Link File
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('TripsPerDay')"
+                (click)="tripsPerDay()">
+                Trips per day
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('NightTrips')" (click)="nightTrip()">
+                Night trips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('DetailedToCustomers')"
+                (click)="detailedToCustomers()">
+                Data absence
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                (click)="commercialServices()">
+                Commercial services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('AddingOfServices')"
+                (click)="addingOfServices()">
+                Adding of services
+              </a>
+            </li>
+          </ul>
+          <h6 class="p-2 mt-1">Geozone reports</h6>
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('TrackingObject')" (click)="geoZone()">
+                Geo zone over
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('ByTwoGeozones')"
+                (click)="twoGeozones()">
+                By two geozones
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('GroupZoneAccessControl')"
+                (click)="groupZone()">
+                Group zone access control
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="p-2 mt-1">Geocoding via Excel</h6>
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('RoutePoints')" (click)="routePts()">
+                Route points
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('TripsAndMileage')"
+                (click)="tripsAndMileage()">
+                Trips and mileage
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="p-2 mt-1">Driving safety</h6>
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('Violations')" (click)="violations()">
+                Violations
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('DriverAttentionControl')"
+                (click)="driverAttentionControl()">
+                Driver attention control
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2"
+                [class.active]="isActive('Events')" (click)="Events()">
+                Events
+              </a>
+            </li>
+          </ul>
+
+          <hr class="my-3">
+
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2">
+                Delivery list
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"
+      style="background-color: #57a598;">
+
+      <div class="loading" *ngIf="loading">
+        <span class="spinner-border text-success" role="status"
+          aria-hidden="true"></span>
+      </div>
+
+      <!-- Common -->
+      <div *ngIf="variables['motionHistory'] || variables['motionInterval']">
+        <span>Choose vehicle</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a vehicle</option>
+          </select>
+        </div>
+      </div>
+
+      <span *ngIf="variables['motionHistory']">Choose interval</span>
+      <span *ngIf="variables['motionInterval']">Parking</span>
+
+      <div class="input-group mb-3 mt-1 col-3"
+        *ngIf="variables['motionHistory'] || variables['motionInterval']">
+        <select class="dropdown-toggle custom-select c" id="inputGroupSelect01">
+          <option value="Not set">Not set</option>
+          <option value="60 seconds">60 seconds</option>
+          <option value="2 minutes">2 minutes</option>
+          <option value="5 minutes">5 minutes</option>
+          <option value="10 minutes">10 minutes</option>
+          <option value="30 minutes">30 minutes</option>
+          <option value="1 h">1 h</option>
+          <option value="6 h">6 h</option>
+          <option value="12 h">12 h</option>
+          <option value="1 d">1 d</option>
+        </select>
+      </div>
+
+      <div *ngIf="variables['VehicleShareLinkFile']">
+        <form class="mt-2">
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html" class="m-2">Vehicle group</label>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="html">Vehicle list</label><br>
+        </form>
+        <div class="input-group mb-3 mt-1 col-3 pl-0">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a group</option>
+          </select>
+        </div>
+      </div>
+
+      <div *ngIf="variables['TripsPerDay']">
+        <span>Choose vehicle</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a vehicle</option>
+          </select>
+        </div>
+      </div>
+
+      <div
+        *ngIf="variables['DetailedToCustomers'] || variables['AddingOfServices']">
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="flexCheckDefault">
+            <span>{{variables['DetailedToCustomers'] ? 'Detailed to customers' :
+              'Detailed report'}}</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Geozone reports -->
+      <div class="TrackingObject" *ngIf="variables['TrackingObject']">
+        <span>Tracking object</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a vehicle</option>
+          </select>
+        </div>
+        <p>Controlled geozones</p>
+        <button class="btn m-1">Select all</button>
+        <button class="btn m-1">Cancel selection</button>
+        <div class="form-check mt-3">
+          <input class="form-check-input TrackingObject" type="checkbox">
+          <label class="form-check-label" for="flexCheckDefault">
+            <span>test_zone</span>
+          </label>
+        </div>
+      </div>
+
+      <div *ngIf="variables['ByTwoGeozones']">
+        <span>Outgoing geozone name</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>test_zone</option>
+          </select>
+        </div>
+        <span>Entering geozone name</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>test_zone</option>
+          </select>
+        </div>
+        <span>Vehicle group name</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a group</option>
+          </select>
+        </div>
+      </div>
+
+      <div *ngIf="variables['GroupZoneAccessControl']">
+        <span>Choose vehicle group</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a vehicle</option>
+          </select>
+        </div>
+        <span>Zone name</span>
+        <div class="input-group mb-3 mt-1 col-3">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>test_zone</option>
+          </select>
+        </div>
+      </div>
+
+      <div *ngIf="variables['RoutePoints'] || variables['TripsAndMileage']">
+        <p class="mt-1">Specify the request file</p>
+        <input class="file me-3" type="text" disabled="disabled">
+        <input type="file" id="file-input" name="file-input" />
+        <label id="file-input-label" for="file-input">Select a File</label>
+        <div>
+          <button class="btn mt-3">Build Excel</button>
+        </div>
+        <div class="line mt-3"></div>
+      </div>
+
+      <div
+        *ngIf="variables['Violations'] || variables['DriverAttentionControl'] || variables['Events']">
+        <form class="mt-2">
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html" class="m-2">Vehicle group</label>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="html">Vehicle list</label><br>
+        </form>
+        <div class="input-group mb-3 mt-1 col-3 pl-0">
+          <select class="dropdown-toggle custom-select c"
+            id="inputGroupSelect01">
+            <option selected>Select a group</option>
+          </select>
+        </div>
+      </div>
+
+      <div
+        *ngIf="!(variables['RoutePoints'] || variables['TripsAndMileage'])"><app-report-period></app-report-period></div>
+    </main>
+  </div>
+</div>

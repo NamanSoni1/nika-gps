@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~leaflet/dist/leaflet.css";
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.bg{
+    height: 100vh;
+    background-color: darkolivegreen;
+    align-items: center;
+}
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+    opacity: 0;
+}
+
+.leaflet-bottom.leaflet-right {
+    display: none;
+}

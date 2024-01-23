@@ -1,0 +1,107 @@
+<h6 class="mb-4 mt-4">Report period</h6>
+
+<span>Select for:
+  <button class="c ms-2 btn">today</button>
+  <button class="c ms-2 btn">yesterday</button>
+  <button class="c ms-2 btn">this month</button>
+  <button class="c ms-2 btn">last month</button>
+</span>
+
+<div class="mt-3"><span>Select for last:</span>
+  <button class="c ms-2 btn">day</button>
+  <button class="c ms-2 btn">week</button>
+  <button class="c ms-2 btn">month</button>
+</div>
+
+<div class="date-to">
+  <span>Date from:</span> <input type="date" class="m-3"> <input type="time">
+</div>
+<div class="date-from">
+  <span>Date to:</span> <input type="date" class="m-3"> <input type="time">
+</div>
+
+<h6 class="mb-3 mt-3">Working hours interval</h6>
+<span class="m-2">From:</span> <input type="text" style="width: 50px;">
+<span class="m-2">To:</span> <input type="text" style="width: 50px;">
+
+<div class="l-btn mt-4">
+  <button class="btn c">Create report</button>
+  <button class="btn c ml-2">Build PDF</button>
+  <button class="btn c ml-2">Build Excel</button>
+</div>
+
+<div class="custom-control custom-switch mt-3">
+  <input type="checkbox" class="custom-control-input" id="customSwitch1"
+    (click)="subscribe()">
+  <label class="custom-control-label" for="customSwitch1">Subscribe for
+    report</label>
+</div>
+
+<div class="after-subscribe" *ngIf="showMyContainer">
+  <div class="icon" (click)="email = true">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="12px" height="12px" viewBox="0 0 32 32" version="1.1">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+          <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-360.000000, -1035.000000)" fill="#FFF">
+              <path d="M388,1053 L378,1053 L378,1063 C378,1064.1 377.104,1065 376,1065 C374.896,1065 374,1064.1 374,1063 L374,1053 L364,1053 C362.896,1053 362,1052.1 362,1051 C362,1049.9 362.896,1049 364,1049 L374,1049 L374,1039 C374,1037.9 374.896,1037 376,1037 C377.104,1037 378,1037.9 378,1039 L378,1049 L388,1049 C389.104,1049 390,1049.9 390,1051 C390,1052.1 389.104,1053 388,1053 L388,1053 Z M388,1047 L380,1047 L380,1039 C380,1036.79 378.209,1035 376,1035 C373.791,1035 372,1036.79 372,1039 L372,1047 L364,1047 C361.791,1047 360,1048.79 360,1051 C360,1053.21 361.791,1055 364,1055 L372,1055 L372,1063 C372,1065.21 373.791,1067 376,1067 C378.209,1067 380,1065.21 380,1063 L380,1055 L388,1055 C390.209,1055 392,1053.21 392,1051 C392,1048.79 390.209,1047 388,1047 L388,1047 Z" id="plus" sketch:type="MSShapeGroup">
+  
+  </path>
+          </g>
+      </g>
+  </svg>
+  </div>
+
+  <div class="add-email" *ngIf="email">
+    <input type="text" style="height: 40px;" placeholder="E-mail">
+    <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none">
+        <g id="System / Save">
+        <path id="Vector" d="M17 21.0002L7 21M17 21.0002L17.8031 21C18.921 21 19.48 21 19.9074 20.7822C20.2837 20.5905 20.5905 20.2843 20.7822 19.908C21 19.4806 21 18.921 21 17.8031V9.21955C21 8.77072 21 8.54521 20.9521 8.33105C20.9095 8.14 20.8393 7.95652 20.7432 7.78595C20.6366 7.59674 20.487 7.43055 20.1929 7.10378L17.4377 4.04241C17.0969 3.66374 16.9242 3.47181 16.7168 3.33398C16.5303 3.21 16.3242 3.11858 16.1073 3.06287C15.8625 3 15.5998 3 15.075 3H6.2002C5.08009 3 4.51962 3 4.0918 3.21799C3.71547 3.40973 3.40973 3.71547 3.21799 4.0918C3 4.51962 3 5.08009 3 6.2002V17.8002C3 18.9203 3 19.4796 3.21799 19.9074C3.40973 20.2837 3.71547 20.5905 4.0918 20.7822C4.5192 21 5.07899 21 6.19691 21H7M17 21.0002V17.1969C17 16.079 17 15.5192 16.7822 15.0918C16.5905 14.7155 16.2837 14.4097 15.9074 14.218C15.4796 14 14.9203 14 13.8002 14H10.2002C9.08009 14 8.51962 14 8.0918 14.218C7.71547 14.4097 7.40973 14.7155 7.21799 15.0918C7 15.5196 7 16.0801 7 17.2002V21M15 7H9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        </svg>
+    </span>
+    <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none">
+        <path d="M4 7H20" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 7V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </span>
+  </div>
+
+  <div class="mt-2">
+    Delivery interval <br>
+    <input type="radio" name="Daily" id="Daily">
+    <label for="Daily">Daily</label>
+  </div>
+  <br>
+  <div class="line-2"></div>
+  <br>
+  <div>
+    <input type="radio" name="Weekly" id="Weekly">
+    <label for="Weekly">Weekly</label>
+    <div class="ms-4">
+    <input type="radio" id="Monday" name="week" value="Monday">
+    <label for="Monday">Monday</label>&nbsp;&nbsp;&nbsp;
+    <input class="ms-5" type="radio" id="Tuesday" name="week" value="Tuesday">
+    <label for="Tuesday">Tuesday</label><br>
+    <input type="radio" id="Wednesday" name="week" value="Wednesday">
+    <label for="Wednesday">Wednesday</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input class="ms-3" type="radio" id="Thursday" name="week" value="Thursday">
+    <label for="Thursday">Thursday</label><br>
+    <input type="radio" id="Friday" name="week" value="Friday">
+    <label for="Friday">Friday</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input class="ms-5" type="radio" id="Saturday" name="week" value="Saturday">
+    <label for="Saturday">Saturday</label><br>
+    <input type="radio" id="Sunday" name="week" value="Sunday">
+    <label for="Sunday">Sunday</label>
+  </div>
+  </div>
+<div>
+  Report delivery time: <br>
+  <input class="mt-2" type="text" id="18:00" name="18:00" value="18:00">
+</div>
+
+<button class="btn btn-custom">Subscribe</button>
+</div>
+
+<div class="line mt-3"></div>

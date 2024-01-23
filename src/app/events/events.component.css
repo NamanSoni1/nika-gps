@@ -1,0 +1,171 @@
+* {
+    color: #fff;
+}
+
+.main{
+    height: calc(100vh - 60px);
+}
+
+.b-c {
+    background-color: #1b7f6d;
+}
+
+.time-interval:hover{
+background: #ff8c00;
+}
+
+.btn-hover:hover{
+background: #176a5b;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+}
+
+.header span {
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.header button:hover {
+    background-color: #ff8c00;
+}
+
+.b-b {
+    border: transparent;
+}
+
+.bc.ml-4:hover {
+    background-color: #ff8c00;
+}
+
+.b-r {
+    border-radius: 10px;
+}
+
+.clear {
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+}
+
+.today {
+    margin-top: 20px;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+}
+
+.gtool {
+    height: 30px;
+    width: 30px;
+    background-color: #1b7f6d;
+    border-radius: 50%;
+
+    svg {
+        fill: #fff;
+
+        /* stroke: #fff; */
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+.s {
+    path {
+        fill: transparent !important;
+        stroke: #fff;
+    }
+}
+
+.m-h {
+    height: 150px;
+}
+
+.w-8 {
+    width: 100%;
+    margin-left: -10px;
+}
+
+.w-2 {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+input[type="datetime-local"] {
+    background: transparent;
+    border: none;
+}
+
+input[type="datetime-local"] {
+    appearance: none;
+}
+
+.btn.d-flex.justify-content-center.mt-2 {
+    gap: 0 19px !important;
+    padding: 0;
+}
+
+.header {
+border-radius: 5px;
+}
+
+.cotiner{
+    border-radius: 7px;
+    width: calc(100% - 35px);
+}
+
+.pd{
+    padding: 5px 30px 5px 30px;
+}
+
+th{
+    background-color: #176a5b !important;
+    border: none;
+    color: #fff;
+    font-size: medium;
+    font-weight: 300;
+}
+
+td{
+    height: 260px;
+    background-color: #1b7f6d;
+    color: #fff ;
+}
+tbody,
+td,
+tfoot,
+th,
+tr,.table td ,.table thead th{
+    border-color: inherit;
+    border-style: none;
+    border-width: 0;
+    border-top:none;
+    border-bottom:none;
+    font-weight: 400;
+}
+
+th:hover{
+    background-color: #ff8c00 !important;
+}
+
+table.table {
+    border-radius: 7px !important;
+    overflow: hidden;
+    height: 345px;
+}
+.mysvgicon {
+    margin-top: 15px;
+  
+}
+.mysvgicon svg {
+    width: 34px;
+    height: 34px;
+    background: #1b7f6d;
+    border-radius: 50%;
+    fill: #9b9b9b;
+    stroke: #9b9b9b;
+}

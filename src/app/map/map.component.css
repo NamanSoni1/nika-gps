@@ -1,0 +1,307 @@
+ * {
+   color: #fff;
+ }
+
+ .map-container {
+   height: calc(100vh - 60px);
+ }
+
+ .tab-container {
+   height: 500px;
+   max-width: 350px;
+   border: 1px solid black;
+   overflow: auto;
+   background-color: white;
+   right: -1px;
+ }
+ .sidebaropen {
+   max-width: 350px;
+   cursor: pointer;
+ }
+
+ .sidebarclose {
+   max-width: 30px;
+   cursor: pointer;
+ }
+
+ .sidebar {
+   display: flex;
+   position: relative;
+   z-index: 999;
+   margin-right: 13px;
+ }
+
+ .Search-feild {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   width: 100%;
+ }
+
+ .color {
+   margin-top: 10px;
+   background-color: #1b7f6d;
+   border-radius: 10px;
+   color: #ffff;
+   box-shadow: none;
+   border-left: transparent;
+   padding-left: 2px;
+   height: 45px;
+ }
+
+ #basic-addon1 {
+   border-left: transparent;
+ }
+
+ .color::placeholder {
+   color: #fff !important;
+ }
+
+ .h-1 {
+   height: 40px;
+ }
+
+ .w-1 {
+   width: 439px;
+   margin-top: 5px;
+
+ }
+
+ .custom {
+   width: 99%;
+   /* padding-left: 10px; */
+ }
+
+ .searchInput {
+   height: 20px;
+   padding: 10px;
+   margin-bottom: 5px;
+   width: 100px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   border-left: 0px;
+   color: #fff;
+   padding-left: 0;
+ }
+
+ .bgcol {
+   background-color: #57a598;
+   margin-left: 20px;
+   border-radius: 10px;
+   width: 250px;
+   box-shadow: none !important;
+   padding: 3px;
+ }
+
+ .font {
+   font-size: 14px;
+   font-weight: 400;
+ }
+
+ .row {
+   margin-top: -20px;
+ }
+
+ .row-geo {
+   z-index: 999999;
+   display: flex;
+   justify-content: end;
+   position: relative;
+   border-radius: 10px;
+ }
+
+ .left-box .card,
+ .right-box .card {
+   margin-bottom: 10px;
+   margin-top: 5px;
+ }
+
+ .card {
+   background-color: #1b7f6d;
+   color: #fff;
+ }
+
+ .f-15 {
+   font-size: medium;
+ }
+
+ .c-4 {
+   background-color: #57a598;
+   border: none;
+   border-radius: 10px;
+   right: 10px;
+   top: 5px;
+   color: #fff;
+ }
+
+ .card-header {
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   padding: 2px;
+
+   svg {
+     path {
+       fill: #fff;
+     }
+   }
+ }
+
+ .relative.ml-auto {
+   margin-top: 4px;
+ }
+
+ .header {
+   height: 40px;
+   width: 100%;
+   align-items: center;
+   padding: 10px;
+   background-color: #1b7f6d;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+
+   svg {
+     fill: #ffff;
+     stroke: #ffff;
+
+     path {
+       fill: #ffff;
+     }
+   }
+ }
+
+ .left-box,
+ .right-box {
+  width: 100%;
+  z-index: 999;
+  max-width: 447px;
+  position: relative;
+ }
+
+ .border {
+   margin-top: 5px;
+   margin-left: 3px;
+ }
+
+ .header-body {
+  font-size: medium;
+  font-weight: 400;
+  width: 99%;
+ }
+
+ .toggle-icon {
+   height: 30px;
+   background-color: #176A5B;
+ }
+
+ .c-n {
+  height: 30px;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  padding-left: 10px;
+  align-items: center;
+  color: #fff;
+  background-color: #176A5B;
+ }
+
+ .c-1 {
+  height: 80px;
+  width: 50%;
+  background-color: #57a598;
+ }
+
+ .c-2 {
+  height: 80px;
+  width: 50%;
+   background-color: #1b7f6d;
+ }
+
+ .active {
+   background-color: #ff8c00 !important;
+ }
+
+ .b-c {
+   background-color: #1b7f6d;
+   height: 40px;
+   width: 220px;
+   padding: 5px;
+   color: #fff;
+
+   svg {
+     fill: #fff;
+     stroke: #fff;
+
+     path {
+       fill: #fff;
+     }
+   }
+ }
+
+ .geo-tabs{
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 5px;
+  width: 450px;
+ }
+
+ .geotool {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+ }
+
+ .gtool {
+   height: 40px;
+   width: 40px;
+   z-index: 99999;
+   background-color: #57a598;
+   border-radius: 50%;
+
+   svg {
+     fill: #fff;
+
+     /* stroke: #fff; */
+     path {
+       fill: #fff;
+     }
+   }
+ }
+
+ .gtool:hover {
+   background-color: #176A5B;
+ }
+
+ .cb-1 {
+   height: 80px;
+   width: 100%;
+   background-color: #57a598;
+ }
+
+ .cb-2 {
+   height: 80px;
+   width: 60%;
+   background-color: #176A5B
+ }
+
+ .cb-3 {
+   height: 10px;
+   width: 100%;
+   background-color: #176A5B;
+ }
+
+ .card-body-h {
+   height: 200px;
+   background-color: #57a598;
+ }
+
+ .toggle-icon {
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+
+input:focus{
+  box-shadow: none;
+}
